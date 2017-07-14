@@ -1,0 +1,27 @@
+
+.search-input {
+  margin: 10px 0;
+  max-width: 1000px;
+  height: 34px;
+  width: 100%;
+  font-size: 18px;
+  border: 0;
+  padding: 0 5px;
+  outline: none;
+  border-radius: 2px;
+}
+
+.search-button {
+  position: relative;
+  top: 9px;
+  left: -6px;
+  border: 0;
+  height: 34px;
+  border-radius: 0 2px 2px 0;
+  background-color: #EEEEEE;
+
+  img {
+    width: 20px;
+    padding: 5px;
+  }
+}

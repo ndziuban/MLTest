@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="ie8"> <![endif]-->
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/statics/stylesheets/style.css">
+    <meta charset="utf-8"></meta>
+    <meta name="description" content="Test de Frontend ML"></meta>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0"></meta>
+    <meta name="mobile-web-app-capable" content="yes"></meta>
+    <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+    <meta property="og:site_name" content="TestML"></meta>
+    <meta property="og:title" content="Test ML"></meta>
+    <meta property="og:description" content="Test de Frontend ML"></meta>
+    <meta property="og:url" content="//"></meta>
+    <meta property="og:image" content="img/og-image.png"></meta>
+    <meta property="og:type" content="website"></meta>
+
+</head>
+<body>
+{{> header }}
+
+<ul>
+{{#each items}}
+    <li class="item">
+      <a href="/items/{{this.id}}">
+        <img class="item-thumbnail" src="{{this.img}}"/>
+        <div class="item-info-container">
+          <div class="price-info">
+            <span class="item-price">$ {{this.price.amount}}</span>
+            {{#if this.free_shipping}}
+              <img class="icon-shipping" src="/statics/images/shipping.png"/>
+            {{/if}}
+            <div class="location-info">
+              <span class="item-location">{{this.address}}</span>
+            </div>
+          </div>
+          <div class="title-info">
+            <span class="item-title">{{this.title}}</span>
+          </div>
+        </div>
+      </a>
+    </li>
+{{/each}}
+</ul>
+
+<script type="text/javascript" src="/statics/js/generator.min.js"></script>
+</body>
+</html>

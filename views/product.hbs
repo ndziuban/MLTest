@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="ie8"> <![endif]-->
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/statics/stylesheets/style.css">
+    <meta charset="utf-8"></meta>
+    <meta name="description" content="Test de Frontend ML"></meta>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0"></meta>
+    <meta name="mobile-web-app-capable" content="yes"></meta>
+    <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+    <meta property="og:site_name" content="TestML"></meta>
+    <meta property="og:title" content="Test ML"></meta>
+    <meta property="og:description" content="Test de Frontend ML"></meta>
+    <meta property="og:url" content="//"></meta>
+    <meta property="og:image" content="img/og-image.png"></meta>
+    <meta property="og:type" content="website"></meta>
+
+</head>
+<body>
+{{> header }}
+<div class="details-container">
+    <img class="details-thumbnail" src="{{item.picture}}"/>
+    <div class="details-info-container">
+      <div class="details-sell-info">
+        {{#isNew item.condition}}
+          <span class="details-sell-count">Nuevo - {{item.sold_quantity}} vendidos</span>
+        {{else}}
+          <span class="details-sell-count">{{item.sold_quantity}} vendidos</span>
+        {{/isNew}}
+      </div>
+      <div class="details-title-container">
+        <h2 class="details-title">{{item.title}}</h2>
+      </div>
+      <div class="details-price-info">
+        <span class="details-price">$ {{item.price.amount}}<span class="details-price-decimals">{{item.price.decimals}}</span>
+        </span>
+      </div>
+      <div class="details-buy-button">
+        <button class="buy-button" type="submit">
+          Comprar
+        </button>
+      </div>
+    </div>
+    {{#hasDescription item}}
+      <div class="details-description-container">
+        <span class="details-description-title">Descripción del producto</span>
+        <span class="details-description-text">{{item.description}}</span>
+      </div>
+    {{/hasDescription}}
+</div>
+</body>
+</html>

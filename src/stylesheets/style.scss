@@ -1,0 +1,26 @@
+@import 'modules/searchbox';
+@import 'modules/list';
+@import 'modules/details';
+
+.header-ml {
+  background-color: #ffe600;
+  text-align: center;
+
+  .logo a{
+    background-image: url(../images/logo.png);
+    width: 100px;
+    display: inline-block;
+    background-size: 55px;
+    position: relative;
+    height: 50px;
+    background-repeat: no-repeat;
+    float: left;
+    left: 275px;
+    top: 8px;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: #EEEEEE;
+}

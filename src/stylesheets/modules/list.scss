@@ -1,0 +1,61 @@
+ul {
+  width: 75%;
+  margin: 25px 10%;
+
+  .item {
+    display: block;
+    height: 180px;
+    background-color: white;
+    padding: 16px;
+
+    a {
+      font-family: "Proxima Nova",Helvetica,Arial,sans-serif;
+      text-decoration: none;
+      color: #333;
+
+      .item-info-container {
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 16px;
+        width: 65%;
+
+        .price-info {
+          font-size: 24px;
+          margin-bottom: 18px;
+
+          .icon-shipping {
+            width: 18px;
+            margin: 0 5px;
+          }
+          
+          .location-info {
+            font-size: 12px;
+            text-align: right;
+            color: #999;
+          }
+        }
+
+        .title-info {
+          font-size: 18px;
+          max-width: 60%;
+        }
+      }
+
+      .item-thumbnail {
+        width: 180px;
+        border-radius: 4px;
+        padding-right: 16px;
+      }
+    }
+
+    &:after {
+      content: "";
+      left: 24px;
+      height: 11px;
+      width: 94.5%;
+      border-bottom: 1px solid #eee;
+      display: block;
+      position: relative;
+    }
+  }
+}
