@@ -1,9 +1,5 @@
 "use strict";
 
-// const Q = require('q'),
-//   NodeCache = require('node-cache'),
-//   logger = require('../utils/logger');
-
 class SearchController {
   constructor() {
   }

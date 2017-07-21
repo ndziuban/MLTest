@@ -1,7 +1,5 @@
 "use strict";
 
-// const Q = require('q'),
-//   NodeCache = require('node-cache'),
 const logger = require('../utils/logger');
 
 class ListingController {
